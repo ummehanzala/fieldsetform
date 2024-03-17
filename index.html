@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+<style>
+   div.main{
+        border: 3px solid black;
+        width: 500px; 
+        font-size: x-large;
+        color: rgb(4, 26, 25);
+        background-color: rgb(15, 150, 155);
+      
+    }
+    .navigration{
+        border: 2px solid  rgb(2, 24, 23);
+        color: rgb(2, 24, 23);
+        font-size: x-large;
+        background-color: rgb(15, 150, 155);
+    }
+    a{
+        color: rgb(2, 24, 23);
+    }
+   
+button{
+    color:  rgb(76, 141, 138);
+    background-color: rgb(8, 59, 59);
+}
+</style>
+
+
+</head>
+<body>
+    <br>
+    <br>
+<table class="navigration" width="500px" height="50px" cellspacing="4" cellpadding="4">
+    <tr>
+        <td><a href="#1">First Form</a></td>
+        <td><a href="#2">Second Form</a></td>
+        <td><a href="#3">Third Form</a></td>
+    </tr>
+</table>
+
+  <br><br><br>
+<div class="main">
+    <h1 style="text-align: center;" id="1">First Form</h1>  
+ <fieldset> <legend>Login</legend> 
+    <label>Username*<br /> <input type="text"></label>
+    <br />
+            <label>Password*<br /> <input type="password"></label>
+           </fieldset>
+           <fieldset>
+            <legend>Gender</legend>
+        
+            <label for="m">
+                <input type="radio" name="gender" id="m" value="male"> Male</label>
+               <label for="f">
+                <input type="radio"  name="gender" id="f" value="female"> Female</label>
+            <br /> </fieldset>
+
+<fieldset>
+    <legend>Programming Skill</legend>
+    <label for="java">Java <input type="checkbox" id="java" name="Programming"></label>
+
+    <label for="C++">C++<input type="checkbox" id="C++" name="Programming"></label>
+    <label for="C#">C#<input type="checkbox" id="C#" name="Programming"></label>
+</fieldset>
+<Fieldset>
+    <legend>Fruit</legend>
+   <label for="fruit"> Choose a fruit:
+  <select name="cf" id="fruit">
+<option value="banana">Banana</option>
+<option value="pineapple">pineapple</option>
+<option value="strawbery">strawbery</option>
+<option value="apple">Apple</option>
+  </select></label>
+  </Fieldset>
+  <br>
+&nbsp;&nbsp;<textarea name="comment" cols="60" rows="10"> Enter your comment here</textarea>
+
+<center><button>SEND</button>&nbsp;&nbsp;<button>RESET</button></center>
+<br>
+</div>
+<br>
+<br>
+<br>
+
+
+<Div class="main">
+    <h1 style="text-align: center;" id="2">Second Form</h1>
+<h2>User Registration Form</h2>
+<fieldset>
+    <legend>Personal Information</legend>
+    <table Width="400px">
+        <tr>
+            <td><label for="n2">Name:</td>
+                <td><input type="text" id="n2"></label></td>
+        </tr>
+        <tr>
+            <td><label for="E">Email Address:</td>
+                <td><input type="email" id="E"></label></td>
+        </tr>
+        <tr>
+            <td><label for="P">Password:</td>
+                <td><input type="password" id="P"></label></td>
+        </tr>
+        <tr>
+            <td><label for="CP">Confirm Password:</td>
+                <td><input type="text" id="CP"></label></td>
+        </tr>
+        
+    </table>
+    </fieldset>
+    <fieldset>
+    <legend>Address Detail</legend>
+    <table Width="400px">
+        <tr>
+            <td><label for="L1">Address line one:</td>
+                <td><input type="text" id="L1"></label></td>
+        </tr>
+        <tr>
+            <td><label for="L2">Address line two:</td>
+                <td><input type="text" id="L2"></label></td>
+        </tr>
+        <tr>
+            <td><label for="T">Town / City:</td>
+            <td><input type="text" id="T"></label></td>
+        </tr>
+        <tr>
+            <td><label for="z">Zip / Post code: </td>
+            <td><input type="text" id="z"></label></td>
+        </tr>
+    </table>
+</fieldset>
+
+</Div>
+<br>
+<br>
+<br>
+<div class="main">
+    <h1 style="text-align: center;" id="3">Third Form</h1>
+
+<fieldset>
+    <legend>Login Detail</legend>
+    <table Width="400px">
+        <tr>
+            <td><label for="N2">Name:</td>
+                <td><input type="text" id="N2"></label></td>
+        </tr>
+        <tr>
+            <td><label for="E2">Email Address:</td>
+                <td><input type="email" id="E2"></label></td>
+        </tr>
+        <tr>
+            <td><label for="P2">Password:</td>
+                <td><input type="password" id="P2"></label></td>
+        </tr>
+        </table>
+</fieldset>
+
+
+<fieldset>
+    <legend>Your Feedback</legend>
+    <p>Please check all the emotions that apply to you:</p>
+    <table width="250px" cellpadding="3" cellspacing="4">
+        <tr>
+           <label for="An"> <td>Angry</td>
+        <td><input type="checkbox" value="Angry" name="emotions" id="An"></label></td>
+        </tr>
+        <tr>
+            <td><label for="Sa">Sad</td>
+           <td> <input type="checkbox" value="Sad" name="emotions" id="Sa"></label></td>
+        </tr>
+        <tr>
+           <label for="H"> <td>Happy</td>
+            <td><input type="checkbox" value="happy" name="emotions" id="H"></label></td>
+        </tr>
+        <tr>
+            <td><label for="Am">Ambivalent</td>
+            <td><input type="checkbox" value="Ambivalent"name="emotions" id="Am"></label></td>
+        </tr>
+    </table>
+    <p>How satisfied were you with our service?</p>
+<center><label for="check">Very satisfied <input type="radio" value="very satisfied" id="check"></label></center>
+
+
+
+</fieldset>
+
+</div>
+<h1 style="text-align: center;"><a href="#">Top</a>
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
